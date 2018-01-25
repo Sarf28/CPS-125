@@ -6,7 +6,7 @@ main(void)
 {
      /*printf("My first C program.\n");*/
 	 /*printf("My\nfirst\nC\nprogram.\n");*/
-	 /*printf(" xox\n xxo\n oox\n");*/
+	 /*printf(" x o x\n x x o\n o o x\n");*/
 	
 	return(0);
 	
