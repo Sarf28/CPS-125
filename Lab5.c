@@ -15,7 +15,7 @@ int main(void)
        printf("Error! opening file");
        exit(1);
 	}
-	while(fscanf(fp, "%d%d", &b_num, &num_samples)!=EOF);
+	while(fscanf(fp, "%d%d", &b_num, &num_samples)!=EOF)
 	{
 		
 		for(i=0;i<num_samples;i++)
