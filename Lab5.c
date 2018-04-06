@@ -26,7 +26,7 @@ int main(void)
 		}
 		if(num_samples < 3)
 		{
-			printf("%d  insufficient data\n", b_num);
+			printf("There is not enough data for beach number %d\n", b_num);
 		}
 		else if (avg > 50)
 		{
