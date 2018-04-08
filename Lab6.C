@@ -1,4 +1,4 @@
-/* Lab 6 Part 1: To sort 3 entered numbers*/
+/* Lab 6 Part 1 and 2: To sort 3 entered numbers by passing addresses*/
 
 #include<stdio.h>
 #include<math.h>
