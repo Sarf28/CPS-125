@@ -118,7 +118,7 @@ double column(double arr[][col_size],int r, int c, int col_call)
 	{
 		sum=sum+arr[i][col_call];
 	}
-	avg=sum/c;
+	avg=sum/r;
 	return(avg);
 }
 double diagonal(double arr[][col_size],int r, int c, double *d, double *ad)
