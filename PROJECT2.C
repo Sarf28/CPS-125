@@ -37,7 +37,7 @@ int main(void)
 	{
 		for(j=0;j<c;j++)
 		{
-			printf("%10lf",arr[i][j]);
+			printf("%10.3lf",arr[i][j]);
 		}
 		puts("");
 	}
@@ -46,16 +46,16 @@ int main(void)
 	printf("%d,%d \n",row_call, col_call);
 	
 	avgt=average(arr, r, c);
-	printf("\nThe average of the entire array is: %lf\n",avgt);
+	printf("\nThe average of the entire array is: %.3lf\n",avgt);
 	
 	avgc=corners(arr, r, c);
-	printf("\nThe average of the corners is: %lf\n",avgc);
+	printf("\nThe average of the corners is: %.3lf\n",avgc);
 	
 	sumr=row(arr, r, c, row_call);
-	printf("\nThe sum of elements of row %d is: %lf\n",row_call,sumr);
+	printf("\nThe sum of elements of row %d is: %.3lf\n",row_call,sumr);
 	
 	sumc=column(arr, r, c, col_call);
-	printf("\nThe sum of elements of column %d is: %lf\n",col_call,sumc);
+	printf("\nThe sum of elements of column %d is: %.3lf\n",col_call,sumc);
 	
 	res=diagonal(arr, r, c, &diag, &anti_diag); 
 	if(res==5)
@@ -64,11 +64,11 @@ int main(void)
 	}
 	else
 	{
-		printf("\nThe sum of the diagonal is %lf and the sum of the anti diagonal is %lf\n",diag,anti_diag);
+		printf("\nThe sum of the diagonal is %.3lf and the sum of the anti diagonal is %.3lf\n",diag,anti_diag);
 	}
 	
 	sumbor=borders(arr, r, c);
-	printf("\nThe sum of the borders of the array is: %lf\n",sumbor);
+	printf("\nThe sum of the borders of the array is: %.3lf\n",sumbor);
 	
 	fclose(fp);
 	 
