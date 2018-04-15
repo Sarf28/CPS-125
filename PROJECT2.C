@@ -55,7 +55,7 @@ int main(void)
 	printf("\nThe sum of elements of row %d is: %.3lf\n",row_call,sumr);
 	
 	sumc=column(arr, r, c, col_call);
-	printf("\nThe sum of elements of column %d is: %.3lf\n",col_call,sumc);
+	printf("\nThe average of elements of column %d is: %.3lf\n",col_call,sumc);
 	
 	res=diagonal(arr, r, c, &diag, &anti_diag); 
 	if(res==5)
@@ -112,13 +112,14 @@ double row(double arr[][col_size],int r, int c, int row_call)
 double column(double arr[][col_size],int r, int c, int col_call)
 {
 	int i;
-	double sum=0;
+	double sum=0,avg=0;
 	col_call=col_call-1;
 	for (i=0;i<c;i++)
 	{
 		sum=sum+arr[i][col_call];
 	}
-	return(sum);
+	avg=sum/c;
+	return(avg);
 }
 double diagonal(double arr[][col_size],int r, int c, double *d, double *ad)
 {
