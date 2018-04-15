@@ -49,7 +49,7 @@ int main(void)
 	printf("\nThe average of the entire array is: %.3lf\n",avgt);
 	
 	avgc=corners(arr, r, c);
-	printf("\nThe average of the corners is: %.3lf\n",avgc);
+	printf("\nThe sum of the corners is: %.3lf\n",avgc);
 	
 	sumr=row(arr, r, c, row_call);
 	printf("\nThe sum of elements of row %d is: %.3lf\n",row_call,sumr);
@@ -92,10 +92,10 @@ double average(double arr[][col_size], int r, int c)
 
 double corners(double arr[][col_size],int r, int c)
 {
-	double sum=0, avg=0;
+	double sum=0;
 	sum=arr[0][0]+arr[0][c-1]+arr[r-1][0]+arr[r-1][c-1];
-	avg=sum/4;
-	return(avg);
+	
+	return(sum);
 }
 double row(double arr[][col_size],int r, int c, int row_call)
 {
