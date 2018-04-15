@@ -161,11 +161,3 @@ double borders(double arr[][col_size],int r, int c)
 	sumbor=sumt+sumb+suml+sumr;
 	return(sumbor);
 }
-
-	
-
-
-
-	
-	
-	
