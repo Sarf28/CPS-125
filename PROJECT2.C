@@ -114,7 +114,7 @@ double column(double arr[][col_size],int r, int c, int col_call)
 	int i;
 	double sum=0,avg=0;
 	col_call=col_call-1;
-	for (i=0;i<c;i++)
+	for (i=0;i<r;i++)
 	{
 		sum=sum+arr[i][col_call];
 	}
